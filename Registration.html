@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <!-- the icon in browser's title bar -->
+    <link rel="icon" href="pics/green foodi.ico">
+    <title>Green food - Registration</title>
+</head>
+<body>
+<header>
+    <!-- logo in menu bar -->
+    <div class="logo">
+        <img src="pics/green food.png">
+    </div>
+
+    <ul class="navmenu">
+        <!-- here we have to link pages together at the end -->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Menu.html">Meals</a></li>
+        <li><a href="Registration.html" class="active">Registration</a></li>
+    </ul>
+
+    <div class="nav-icon">
+        <!-- To send an Email -->
+        <a href="mailto:GreenFood@gmail.com" class="btn">Contact</a>
+    </div>
+</header>
+
+<!-- Form section -->
+<div class="container">
+    <div class="title">Registration</div>
+    <form action="#" method="get">
+       <div class="user-details">
+        <div class="input-box">
+            <label class="qustions">First Name :</label>
+            <input type="text" id="fn" name="fn" placeholder="Enter your first name" required>
+        </div>
+        <div class="input-box">
+            <label class="qustions">Last Name :</label>
+            <input type="text" id="ln" name="ln" placeholder="Enter your last name" required>
+        </div>
+        <div class="input-box">
+            <label class="qustions">Email :</label>
+            <input type="email" name="mail"placeholder="Enter your email" required>
+        </div>
+        <div class="input-box">
+            <label class="qustions">Phone number :</label>
+            <input type="text" placeholder="Enter your phone number" minlength="10" maxlength="10" required>
+        </div>
+        <div class="input-box">
+            <label class="qustions">Most appropriate  package for you  :</label>
+            <div class="cselect">
+             <select name="packages" style="width: 90%; color:#686868; border-color:#ccc; border-radius: 5px;">
+                <option id="fir" name="pack" value="Bluking-package">
+                <label for="fir">Bluking package</label>
+                <option id="sec" name="pack" value="sliming-package">
+                <label >sliming package</label>
+                <option id="thir" name="pack" value="Both">
+                <label>Both</label>
+             </select>
+            </div>
+        </div>
+        <div class="input-box"></div>
+
+        <div class="input-box-p">
+            <label class="qustions">For :</label>
+            <input type="radio" id="2w" name="period" value="2w">
+            <label class="qustions" for="2w">Two weeks</label>
+            <input type="radio" id="1m" name="period" value="1m">
+            <label class="qustions" for="1m">One month</label>
+        </div>
+        <!-- // -->
+        <div class="input-box-p">
+            <label class="qustions">quantity :</label>
+            <input type="radio" id="1meal" name="quantity" value="1meal">
+            <label class="qustions" for="1meal">One meal</label>
+            <input type="radio" id="2meals" name="quantity" value="2meals">
+            <label class="qustions" for="2meals">Two meals</label>
+            <input type="radio" id="3meals" name="quantity" value="3meals">
+            <label class="qustions" for="3meals">Three meals</label>
+        </div>
+        <div class="input-box-g">
+            <label class="qustions">Gender :</label>
+            <input type="radio" id="m" name="gen" value="male" required>
+            <label class="qustions" for="m">Male</label>
+            <input type="radio" id="f" name="gen" value="female" required>
+            <label class="qustions" for="f">Female</label>
+            <input type="radio" id="n" name="gen" value="don't want to ans" required>
+            <label class="qustions" for="n">Prefer not to say</label>
+        </div>
+        <div class="input-box">
+            <label class="qustions">starting date :</label>
+            <input type="date" required>
+        </div>
+       </div>
+       <div class="button">
+        <input type="submit" value="Register">
+       </div>
+    </form>
+
+</div>
+
+</div>
+
+<footer>
+    <!-- "&copy" for copy icon -->
+    <p>* Copyright &copy; Green Food</p>
+</footer>
+
+    
+</body>
+</html>
